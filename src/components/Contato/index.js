@@ -52,16 +52,16 @@ export default function Contato(){
                     <form onSubmit={sendMessage}>
                         <label>
                             Nome:
-                            <input type="text" name='name'/>
+                            <input type="text" name='name' required/>
                         </label>
                         <label>
                             Email:
-                            <input type="text" name='email'/>
+                            <input type="email" name='email'required/>
                         </label>
                         <div className='msg-btn'>
                             <label>
                                 Mensagem:
-                                <textarea cols="30" rows="10" name='message'></textarea>
+                                <textarea cols="30" rows="10" name='message' required></textarea>
                             </label>
                             <button>Enviar</button>
                         </div>

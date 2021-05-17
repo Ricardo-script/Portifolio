@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const verde = '#04d361';
 const texto = '#e1e1e6';
 const roxo3 = '#737380';
+const roxo =  '#5B3D77';
 
 export const Container = styled.section`
     width: 100%;
@@ -63,6 +64,7 @@ export const Content = styled.div`
 
             h4{
                 margin: 10px 0 10px 0;
+                color: ${roxo3}
             }
         }
 
@@ -122,7 +124,7 @@ export const Content = styled.div`
             flex-direction: column;
             width: 70%;
             margin: 0 auto;
-            background: ${roxo3};
+            background: ${roxo};
             padding: 5% 5% 0 5%;
             border-radius: 4px;
 
@@ -172,6 +174,8 @@ export const Content = styled.div`
                     background: ${verde};
                     display: block;
                     margin: 5% auto;
+                    font-weight: 700;
+                    color:#3a3a3f;
 
                     &:active{
                         position: relative;

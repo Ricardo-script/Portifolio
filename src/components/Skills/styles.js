@@ -53,6 +53,7 @@ export const Card = styled.div`
     border-bottom: 2px solid ${props => props.color};
     border-radius: 5px 5px 0px 0px;
     cursor: pointer;
+    overflow: hidden;
 
     &:hover{
         background: #262633;

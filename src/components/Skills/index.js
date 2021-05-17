@@ -39,17 +39,6 @@ export default function Skills(){
                         <p>Desenvolvimento com as tags semânticas do html5</p>
                     </div>
                 </Card>
-                <Card color="#FFDA3E">
-                    <div className='icons'>
-                        <div className='areaIcon'>
-                            <img src={javascript} alt="javascript" />
-                        </div>
-                    </div>
-                    <div className='description'>
-                        <h1>Javascript</h1>
-                        <p>Javascript 123 ...</p>
-                    </div>
-                </Card>
                 <Card color="#1572B6">
                     <div className='icons'>
                         <div className='areaIcon'>
@@ -59,6 +48,19 @@ export default function Skills(){
                     <div className='description'>
                         <h1>CSS</h1>
                         <p>Criação de layouts responsivos e animações modernas</p>
+                    </div>
+                </Card>
+                <Card color="#FFDA3E">
+                    <div className='icons'>
+                        <div className='areaIcon'>
+                            <img src={javascript} alt="javascript" />
+                        </div>
+                    </div>
+                    <div className='description'>
+                        <h1>Javascript</h1>
+                        <p> Controle de comportamento dos elementos, execução de funções
+                            dinâmicos dos conteúdos, animações, aplicativos e interações.
+                        </p>
                     </div>
                 </Card>
                 <Card color="#00D8FF">
@@ -83,7 +85,9 @@ export default function Skills(){
                     </div>
                     <div className='description'>
                         <h1>React Native</h1>
-                        <p>React Native 123 ...</p>
+                        <p>Desenvolvimento de aplicações mobile, tanto para Android como para iOS, 
+                            geração de código nativo;Desenvolvimento utilizando componentes
+                        </p>
                     </div>
                 </Card>
                 <Card color="#E371B1">
