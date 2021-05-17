@@ -33,7 +33,7 @@ export default function Services(){
                         <h3>Mobile: </h3>
                         <p>
                             Desenvolvimento de aplicações nativas para dispositivos 
-                            móveis (Android e iOS) com react native
+                            móveis (Android e iOS) com react native.
                         </p>
                     </Info>
                 </Items>
