@@ -4,32 +4,40 @@ import factorybit from '../../assets/templates/factorybit.png';
 import ecommerce from '../../assets/templates/ecommerce.png';
 import gestao from '../../assets/templates/gestao.png';
 import controle from '../../assets/templates/controle_de_estoque.png';
+import nlw5 from '../../assets/templates/nlw5.png';
 import react from '../../assets/icons/react.png';
 import strapi from '../../assets/icons/strapi.png';
 import csharp from '../../assets/icons/c-sharp.png';
 import sqlite from '../../assets/icons/sqlite.png';
+import typescript from '../../assets/icons/typescript.png';
+import firebase from '../../assets/icons/firebase.png';
 
-export default function Projetos(){
+export default function Projetos() {
 
-    function projectOne(){
+    function projectOne() {
         const url = 'https://factorybit.herokuapp.com/';
         const win = window.open(url, '_blank');
         win.focus();
     }
 
-    function projectTree(){
+    function projectTree() {
         const url = 'https://processoseletivoricardo.herokuapp.com/';
         const win = window.open(url, '_blank');
         win.focus();
     }
 
-    function projectFour(){
+    function projectFour() {
         const url = 'https://github.com/Ricardo-script/Controle-de-Estoque';
         const win = window.open(url, '_blank');
         win.focus();
     }
+    function projectFive() {
+        const url = 'https://github.com/Ricardo-script/Projeto-NLW-05';
+        const win = window.open(url, '_blank');
+        win.focus();
+    }
 
-    return(
+    return (
         <Container id='portifolio'>
             <Header>
                 <div class='line'></div>
@@ -99,7 +107,7 @@ export default function Projetos(){
                     <h3>Sistema de gestão</h3>
                     <h3>Features:</h3>
                     <div class="features">
-                    <div class='skills'>
+                        <div class='skills'>
                             <h5><strong>Front-End: </strong>React JS, requisição http com axios</h5>
                         </div>
                         <div className='icon'>
@@ -109,7 +117,7 @@ export default function Projetos(){
                     <h4>Desenvolvimento para um sistema de performace</h4>
                     <p>
                         Descrição: Sistema para gestão administrativo, para performace de kpi, análise
-                        de índice de qualidade. 
+                        de índice de qualidade.
                     </p>
                 </div>
                 <div className='photo'>
@@ -124,7 +132,7 @@ export default function Projetos(){
                     <h3>Controle de Estoque</h3>
                     <h3>Features:</h3>
                     <div class="features">
-                    <div class='skills'>
+                        <div class='skills'>
                             <h5><strong>Front-End: </strong>React JS, requisição http com axios</h5>
                             <h5><strong>Banco de dados: Sqlite</strong></h5>
                         </div>
@@ -145,6 +153,38 @@ export default function Projetos(){
                 <div className='photo'>
                     <div className='projeto-img'>
                         <img src={controle} alt="controle" />
+                    </div>
+                </div>
+            </Project>
+            <Project onClick={projectFive}>
+                <div className='description'>
+                    <small>Jun/2021</small>
+                    <h3>LetmeAsk</h3>
+                    <h3>Features:</h3>
+                    <div class="features">
+                        <div class='skills'>
+                            <h5><strong>Front-End: </strong>React JS (TypeScript)</h5>
+                            <h5><strong>Banco de dados: FireBase</strong></h5>
+                        </div>
+                        <div className='icon'>
+                            <img src={react} alt="csharp" />
+                        </div>
+                        <div className='icon'>
+                            <img src={typescript} alt="react" />
+                        </div>
+                        <div className='icon'>
+                            <img src={firebase} alt="react" />
+                        </div>
+                    </div>
+                    <h4>Projeto NLW#05 LetmeAsk</h4>
+                    <p>
+                        Descrição: Projeto realizado pela equipe da Rocketseat através da NLW é um evento online, essa foi a 5ª
+                        edição do evento. O Projeto realiza perguntas e respostas com criação de salas, criação de perguntas.
+                    </p>
+                </div>
+                <div className='photo'>
+                    <div className='projeto-img'>
+                        <img src={nlw5} alt="nlw5" />
                     </div>
                 </div>
             </Project>
